@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IFE JavaScript Task 01</title>
+</head>
+<body>
+    
+    <label>请输入广州今天天气质量:<input id="aqi-input" type="text"></label>
+    <button id="button">确认填写</button>
+    
+    <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+    <script type="text/javascript">
+        (function(){
+            if(!document.getElementById)  return false;
+            var btn = document.getElementById("button");
+            btn.onclick = function(){
+                //取得input的值
+                var input = document.getElementById("aqi-input");
+                var dis = document.getElementById("aqi-display");
+                dis.firstChild.nodeValue = input.value;
+            }
+        })();
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
