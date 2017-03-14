@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task23</title>
+    <style>
+        div#super {
+            height: 200px;           
+        }
+        div {
+            border:  1px solid grey;
+            padding: 10px;
+            display: inline-block;
+        }
+        div#one {
+            width: 40%;
+        }
+        div#two {
+            width: 30%;
+        }
+        div#three {    
+            width: 20%;
+        }
+        div.selected {
+            background-color: #b3d61e;
+        }
+        div.blank {
+            background-color: white;
+        }
+        div.click {
+            background-color: #e84860;
+        }
+    </style>
+</head>
+<body>
+    <div id="super">
+       <span>super</span>
+        <div id="one"><span>Eat</span>
+            <div><span>Apple</span>
+                <div><span>Pear</span></div>
+                <div><span>Pig</span></div>
+                <div><span>Cola</span></div>
+                <div><span>Soccer</span></div>
+            </div>
+            <div><span>Phone</span></div>
+            <div>
+                <div><span>Book</span></div>
+                <div><span>School</span></div>
+            </div>
+        </div>
+        <div id="two">
+           <span>Note</span>
+            <div><span>Human</span>
+                <div><span>Code</span></div>
+                <div><span>Operate</span></div>
+                <div><span>Man</span></div>
+            </div>
+            <div><span>Program</span>
+                <div><span>Bement</span>
+                    <div><span>Cat</span></div>
+                </div>
+                <div><span>Glass</span></div>
+            </div>
+        </div>
+        <div id="three"><span>Fish</span></div>
+    </div>
+    
+    <br>
+    <br>
+    <button id="preorder">前序遍历</button>
+    <button id="postorder">后序遍历</button>
+    
+    <br>
+    <br>
+    <input type="text" id="keyword">
+    <button id="search">查询</button>
+    <button id="delBtn">删除该元素</button>
+    <input type="text" id="add">
+    <button id="addBtn">增加该元素</button>
+    
+    <script src="task24.js"></script>
+    
+    
+</body>
+</html>

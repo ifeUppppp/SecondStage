@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task25</title>
+    <style>
+        div.list {
+            box-sizing: border-box;
+            width:350px;
+            overflow: hidden;
+            border: 2px solid gray;
+        }
+        strong{
+            cursor: pointer;
+        }
+        li {
+            list-style: none;
+        }
+        ul {
+            color: #ff5d79;
+        }
+        ul.list_1>li,ul.list_2>li {
+            color: deepskyblue;
+            width:250px;
+            cursor: pointer;
+        }
+        li.li_2>strong {
+            color: #ff5d79;
+        }
+        li.hide>ul{
+            display: none;
+        }
+        li.show>ul{
+            display: block;
+        }
+        li.hide>span {
+            display: inline-block;
+            height: 0;
+            width: 0;
+            border-left: 8px solid #ff5d79;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent; 
+        }
+        li.show>span {
+            height: 0;
+            display: inline-block;
+            width: 0;
+            border-top: 8px solid #ff5d79;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+        }
+        li.selected {
+            background-color: #f5dada;
+        }
+    </style>
+</head>
+<body>
+ <div class="list">
+     <ul>
+      <li class="li_1 show">
+            <span></span><strong>Animals</strong>
+          <ul class="list_1">
+               <li>dog</li>
+               <li>cat</li>
+               <li>duck</li>
+           </ul>
+      </li>
+      <li class="li_1 show">
+         <span></span><strong>Cars</strong>
+          <ul class="list_1">
+               <li class="li_2 show">
+                    <span></span><strong>VW</strong>
+                    <ul class="list_2 show">
+                        <li>111</li>
+                       <li>222</li>
+                       <li>333</li>
+                       <li>444</li>
+                        <li>55</li>
+                    </ul>
+               </li>
+               <li class="li_2 show">
+                   <span></span><strong>Peugeo</strong>
+                   <ul class="list_2">
+                       <li>666</li>
+                       <li>777</li>
+                       <li>46</li>
+                       <li>4454</li>
+                        <li>55243535</li>
+                   </ul>
+               </li>
+               <li>Renault</li>
+           </ul>
+      </li>
+      <li>Contact</li>
+  </ul>
+ </div>
+  
+  
+  <button id="delBtn">删除该条目</button>
+   <input type="text" id="add">
+   <button id="addBtn">增加该条目</button>
+   
+   <br>
+   
+   <input type="text" id="search">
+   <button id="searchBtn">查询该条目</button>
+   
+    <script src="task25.js"></script>
+</body>
+</html>

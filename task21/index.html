@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task21</title>
+    <script src=task21.js></script>    
+    <style>
+        li {
+            display: inline-block;
+            color: white;
+            line-height: 30px;
+            padding: 5px 10px;
+            margin: 0 5px 5px 0;
+        }
+        ul#showTag li {
+            background-color: #52b1d8;
+            animation: fadein 1.5s;
+        }
+        ul#showTag li:hover{
+            background-color: #fc6666;
+        }
+        ul#showHobby li {
+            animation: fadein 1.5s;
+            background-color: #86bf4c;
+        }
+        ul#showHobby li:hover {
+            background-color: #b4dd0a;
+
+        }
+        @-webkit-keyframes fadein {
+            from{
+                opacity: 0%;
+            }
+            to {
+                opacity:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <label for="tag">Tag:</label>
+    <input type="text" id="tag">
+    <ul id="showTag">
+        <li>HTML5</li>
+        <li>JavaScript</li>
+        <li>CSS3</li>
+    </ul>
+    <br>
+    <label for="hobby"></label>
+    <textarea id="hobby" cols="45" rows="10"></textarea>
+    <button id="hobbyBtn">确认兴趣爱好</button>
+    <ul id="showHobby">
+        <li>游泳</li>
+        <li>瑜伽</li>
+        <li>摄影</li>
+    </ul>
+</body>
+</html>

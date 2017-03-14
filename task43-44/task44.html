@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task44</title>
+    <style>
+
+        body {
+          font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+          font-size: 14px;
+          margin: -17.5px 0 0 0;
+          padding: 0;
+          overflow: auto;
+        }
+        .display {
+            background-color: rgba(0,0,0,.8);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .waterfall {
+            margin: 0 auto;
+            overflow: auto;
+            width: 75%;
+        }
+        .waterfallColumn {
+            box-sizing: border-box;
+            padding: 8px;
+        }
+        .waterfall div {
+            border: 1px #ccc solid;
+            margin-top: 16px;
+        }
+        
+        /* use with waterfall.js */
+        .waterfallColumn {
+            float: left;
+        }
+        .waterfall img {
+            width: 100%;
+        }
+        
+        /*   原理： 将图片分在四个列里  */
+    </style>
+</head>
+<body>
+    
+    <button id="add">column ++</button>
+    <button id="delete">column --</button>
+    <button id="addbox">box ++</button>
+    
+   <div class="waterfall">
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x600/E97452/fff">
+        </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x300/4C6EB4/fff">
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x250/449F93/fff">
+          
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/200x320/936FBC/fff">
+          
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/400x500/D25064/fff">
+           
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x200/CF364A/fff">
+           
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x400/E59649/fff">
+           
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/350x500/75A0CC/fff">
+           
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x200/4296AD/fff">
+           
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x400/9FDBC7/fff">
+           
+       </div>
+       <div class="waterfallBox">
+           <img src="http://placehold.it/300x300/4E8EF7/fff">
+           
+       </div>
+   </div>
+  </div>
+  <div class="display hidden">
+    <img src="" alt="display">
+  </div>
+        
+    </div>
+    
+    
+    <script src="task44.js"></script>
+</body>
+</html>

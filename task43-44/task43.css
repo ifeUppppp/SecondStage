@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Helvetica,Tahoma,Arial,STXihei,"华文细黑","Microsoft Yahei","微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+    font-size: 14px;
+}
+
+.photoContainer-1,
+.photoContainer-2,
+.photoContainer-3,
+.photoContainer-4,
+.photoContainer-5,
+.photoContainer-6 {
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.photoBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.photoContainer-1 .photoBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.photoContainer-2 .photoBox:first-child {
+    -webkit-clip-path: polygon(0% 0%,100% 0%,50% 100%,0% 100%);
+    clip-path: polygon(0% 0%,100% 0%,50% 100%,0% 100%);
+    width: 66.7%;
+    height: 100%;
+    position: absolute;
+}
+
+.photoContainer-2 .photoBox:last-child {
+    position: absolute;
+    right: 0;
+    width: 66.7%;
+    height: 100%;
+    clip-path:polygon(50% 0%,100% 0,100% 100%,0 100%);
+    -webkit-clip-path:polygon(50% 0%,100% 0,100% 100%,0 100%);
+}
+
+
+
+.photoContainer-3 .photoBox:nth-child(1) {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.photoContainer-3 .photoBox:nth-child(2) {
+    position: absolute;
+    right: 0;top: 0;
+    width: 40%;
+    height: 50%;
+}
+
+.photoContainer-3 .photoBox:nth-child(3) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 50%;
+}
+
+.photoContainer-4 .photoBox {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+.photoContainer-5 .photoBox:nth-child(1) {
+    width: 66.67%;
+    height: 66.67%;
+    position: absolute;
+    left: 0;
+}
+
+.photoContainer-5 .photoBox:nth-child(3),
+.photoContainer-5 .photoBox:nth-child(2) {
+    position: absolute;
+    width: 33.33%;
+    height: 33.33%;
+    bottom: 0;
+}
+.photoContainer-5 .photoBox:nth-child(3) {
+    left: 33.33%;
+}
+
+
+.photoContainer-5 .photoBox:nth-child(4) {
+    width: 33.33%;
+    height: 41.67%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
+
+.photoContainer-5 .photoBox:nth-child(5) {
+    width: 33.33%;
+    height: 58.43%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.photoContainer-6 .photoBox {
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+}
+
+.photoContainer-6 .photoBox:nth-child(2),
+.photoContainer-6 .photoBox:nth-child(3),
+.photoContainer-6 .photoBox:nth-child(4) {
+    float: right;
+
+}
+
+
+.photoContainer-6 .photoBox:nth-child(1) {
+    width: 66.66%;
+    height: 66.66%;
+}

@@ -1,0 +1,30 @@
+ul {
+    display:flex;
+    text-align: center;
+    height: 400px;
+    align-items: center;
+}
+li {
+    flex:1;
+    display: inline-block;
+    background-color: #e36868;
+    height: 300px;
+    margin-right: 10px;
+}
+
+#day {
+    width: 2000px;
+}
+#week{
+    width: 1000px;
+}
+#month{
+    width: 210px;
+}
+
+.aqi-chart-wrap {
+    width: 2000px;
+    height: 1300px;
+    border: 2px solid grey;
+    text-align: center;
+}

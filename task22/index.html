@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task22</title>
+    <style>
+        div {
+            display: flex;
+            padding: 20px 10px;
+            border: 2px solid grey;
+        }
+        div#root {
+            width: 600px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        div#root div {
+            flex: 1;
+        }
+        div:first-child {
+            margin-right: 5px;
+        }
+        div.blank {
+            background-color: white;
+        }
+        div.selected {
+            background-color: #ff6363;
+        }
+    </style>
+</head>
+<body>
+
+   <div id="root">
+       <div>
+           <div>
+               <div></div>
+               <div></div>
+           </div>
+           <div>
+               <div></div>
+               <div></div>
+           </div>
+       </div>
+       <div>
+           <div>
+               <div></div>
+               <div></div>
+           </div>
+           <div>
+               <div></div>
+               <div></div>
+           </div>
+       </div>
+   </div>
+    
+    <button id="preOrder">前序遍历</button>
+    <button id="inOrder">中序遍历</button>
+    <button id="postOrder">后序遍历</button>
+        <script src="task22.js"></script>
+</body>
+</html>

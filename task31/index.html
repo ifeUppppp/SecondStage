@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task31</title>
+    <style>
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <div id="select"> 
+       <input type="radio" name="isStudent" value="在校生">在校生
+        <input type="radio" name="isStudent" value="非在校生">非在校生
+        </div>
+   
+    <div id="yesStudent" class="hide">
+        <span>学校</span>
+        <select name="city" id="city">
+            <option value="北京"></option>
+            <option value="上海"></option>
+            <option value="杭州"></option>
+            <option value="广州"></option>
+        </select>
+        <select name="school" id="school">
+            <option value="北京大学"></option>
+            <option value="上海大学"></option>
+            <option value="浙江大学"></option>
+            <option value="广州大学"></option>
+        </select>
+    </div>
+    
+    <div id="noStudent" class="hide">
+        <span>就业单位</span>
+        <input type="text">
+    </div>
+    
+    <script>
+        document.getElementById("select").onclick = function(){
+            var radios = document.getElementsByName("isStudent");
+            for(var i=0;i<radios.length;i++){
+                if(radios[i].checked) {
+                    if(radios[i].value=="在校生"){
+                        document.getElementById('noStudent').className ="hide";
+                            document.getElementById('yesStudent').className ="show";
+                    } else {
+                        document.getElementById('noStudent').className ="show";
+                            document.getElementById('yesStudent').className ="hide";
+                    }
+                }
+                
+            }
+            
+            
+        }
+
+    </script>
+</body>
+</html>

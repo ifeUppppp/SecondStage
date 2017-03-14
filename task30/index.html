@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task32</title>
+    <style>
+        .select {
+            width: 25%;
+            float: left;
+        }
+        .show {
+            width: 65%;
+            float: left;
+            border:  2px solid #f71e47;
+            border-radius: 10px;
+            height: 500px;
+            margin-left: 20px;
+        }
+        .show h1 {
+            text-align: center;
+            color: #ff365c;
+        }
+    </style>
+</head>
+<body>
+    <div class="select">
+        <fieldset>
+            <legend>类型</legend>
+            <input type="radio" name="type" value="input">输入框
+            <input type="radio" name="type" value="radio">单选框
+            <input type="radio" name="type" value="checkbox">多选框
+            <input type="radio" name="type" value="select">下拉框
+            <input type="radio" name="type" value="textarea">文本域
+        </fieldset>
+        <fieldset>
+            <legend>配置</legend>
+            <input type="radio" name="isMust" value="must">必填
+            <input type="radio" name="isMust" value="nomust">选填
+            <span>样式</span> 
+            <select name="style" id="style">
+                <option value="样式一">样式一</option>
+                <option value="样式二">样式二</option>
+            </select> 
+        </fieldset>
+        <fieldset>
+            <legend>规则</legend>
+            <input type="radio" name="rule" value="word">文字
+            <input type="radio" name="rule" value="number">数字
+            <input type="radio" name="rule" value="email">邮箱
+            <input type="radio" name="rule" value="phone">电话号码
+            <input type="radio" name="rule" value="password">密码
+        </fieldset>
+        <fieldset>
+            <legend>长度限制</legend>
+            <h6>字符范围：</h6>
+            <input type="text" id="range1"> -- <input type="text" id="range2">
+        </fieldset>
+        <button id="add">ADD</button>
+    </div>
+    <div class="show">
+        <h1>表单展示区</h1>
+    </div>
+    
+    <script src="task32.js"></script>
+</body>
+</html>

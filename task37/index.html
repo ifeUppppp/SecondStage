@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task37</title>
+    <style>
+        .bg {
+            background-color: #ff6b6b;
+        }
+        .cover {
+            position: absolute;
+            width: 100%;
+            min-height: 100%;
+            background-color: rgba(111, 111, 111, 0.6);
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+        }
+        .noplay {
+            display: none;
+        }
+        #open {
+            position: absolute;
+        }
+        div.cover div.float {
+            width: 60%;
+            margin: 30px auto;
+            position: relative;
+            min-height: 300px;
+        }
+        div.cover div.float div.float_top {
+            width: 100%;
+            top: 0;
+            position: absolute;
+            background-color: #ff4f4f;
+            color: white;
+            line-height:50px;
+            padding: 0 20px;
+        }
+        div.float_content {
+            padding: 20px 20px 80px 20px;
+            background-color: #ffc8c8;
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            min-height: 190px;
+        }
+        div.float_content  button {
+            position: absolute;
+            bottom: 20px;
+            width: 100px;
+            height: 40px;
+            background-color: #fff;
+            border-style: none;
+            color: #ff4f4f;
+            right: 50px;
+        }
+        div.float_content button:first-child {
+            right: 180px;
+        }
+    </style>
+</head>
+<body>
+   <p>浮出层的中心默认在屏幕正中
+当浮出层显示时，屏幕滚动时，浮出层始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置。或者禁止页面在有浮出层出现时滚动
+当浮出层显示时，点击浮出层以外的部分，默认为关闭浮出层。
+可以实现一个半透明的遮罩来挡住浮出层外的部分
+
+提供使用JavaScript控制浮出层展现和关闭的接口
+浮出层的窗口大小可以是一个默认固定值，也可以是随内容变化而自适应变化，也可以是通过接口参数进行调整，自行根据自己能力进行选择</p>
+
+     <button id="open">打开浮出层</button>
+     <div class="noplay" id="cover">
+         <div class="float">
+             <div class="float_top">这是一个浮出层</div>
+             <div class="float_content">浮出层的中心默认在屏幕正中
+当浮出层显示时，屏幕滚动时，浮出层始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置。或者禁止页面在有浮出层出现时滚动
+当浮出层显示时，点击浮出层以外的部分，默认为关闭浮出层。
+可以实现一个半透明的遮罩来挡住浮出层外的部分
+
+
+提供使用JavaScript控制浮出层展现和关闭的接口
+浮出层的窗口大小可以是一个默认固定值，也可以是随内容变化而自适应变化浮出层的中心默认在屏幕正中
+当浮出层显示时，屏幕滚动时，浮出层始终保持位置固定在屏幕正中，不随屏幕滚动而变化位置。或者禁止页面在有浮出层出现时滚动
+当浮出层显示时，点击浮出层以外的部分，默认为关闭浮出层。
+可以实现一个半透明的遮罩来挡住浮出层外的部分
+
+提供使用JavaScript控制浮出层展现和关闭的接口
+浮出层的窗口大小可以是一个默认固定值，也可以是随内容变化而自适应变化这是一个浮出层
+             <button>确定</button><button>取消</button> 
+             </div>
+         </div>
+         
+     </div>
+     <script>
+        var cover = document.getElementById("cover");
+        document.getElementById('open').onclick = function() {
+            cover.className = 'cover';
+        }
+        document.getElementById('cover').onclick = function(e){
+            if(e.target && e.target.getAttribute('id')=="cover") {
+                cover.className = "noplay";
+            }
+        }
+    </script>
+</body>
+</html>
